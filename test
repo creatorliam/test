@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier de l'avent 24S</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            background-image: url('https://images.unsplash.com/photo-1576603391754-df829b2e3f6b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            color: black;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            display: none;
+        }
+        table, th, td {
+            border: 1px solid #fff;
+        }
+        th, td {
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000;
+        }
+        th {
+            background-color: rgba(0, 128, 0, 0.8);
+            color: black;
+        }
+        #reveal-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        #reveal-button:hover {
+            background-color: #45a049;
+        }
+        @keyframes confetti {
+            0% {transform: translateY(0); opacity: 1;}
+            100% {transform: translateY(300px); opacity: 0;}
+        }
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #f39c12;
+            animation: confetti 1s linear infinite;
+            top: -10px;
+        }
+        .christmas-image {
+            width: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calendrier de l'avent 24S</h1>
+    <div>
+        <img src="https://media.istockphoto.com/id/1357890892/fr/vectoriel/mignon-p%C3%A8re-no%C3%ABl-avec-cadeau-de-no%C3%ABl-illustration-vectorielle.jpg?s=612x612&w=0&k=20&c=NNGuQ_5o5ZwKaqwMkFVBMOMmw_TeV936oKtZjOc5T18=" alt="Father Christmas" class="christmas-image">
+        <img src="https://static.wikia.nocookie.net/powerlisting/images/7/7e/Christmas-elf-cartoon-cute-png-image.png" alt="Christmas Elf" class="christmas-image">
+        <img src="https://pbs.twimg.com/profile_images/1555495441789292545/dm6BpQWX_400x400.jpg" alt="Logo" class="christmas-image">
+    </div>
+    <p>Check daily to see who is selected for the chocolate!</p>
+    <button id="reveal-button">Reveal Today's Chocolates!</button>
+    <table id="calendar-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Lindt</th>
+                <th>Kinder Bueno</th>
+                <th>Kinder</th>
+                <th>Ferrero Rocher</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Emma M</td><td>Thibaut</td><td>Romain</td><td>Liam</td></tr>
+            <tr><td>2</td><td>Myriam F</td><td>Andrea</td><td>Emma G</td><td>Aude</td></tr>
+            <tr><td>3</td><td>Morgan</td><td>Thibaut</td><td>Myriam S</td><td>Axelle</td></tr>
+            <tr><td>4</td><td>Manon</td><td>Agathe</td><td>Agathe</td><td>Margaux</td></tr>
+            <tr><td>5</td><td>Morgan</td><td>Marion</td><td>Maria</td><td>Chlo&eacute;</td></tr>
+            <tr><td>6</td><td>Julien</td><td>Claire</td><td>Victoria</td><td>Camille</td></tr>
+            <tr><td>7</td><td>Philippine</td><td>Lola</td><td>Emma M</td><td>Romain</td></tr>
+            <tr><td>8</td><td>Aude</td><td>Myriam F</td><td>Andrea</td><td>Liam</td></tr>
+            <tr><td>9</td><td>Axelle</td><td>Camille</td><td>Marion</td><td>Thibaut</td></tr>
+            <tr><td>10</td><td>Victoria</td><td>Manon</td><td>Morgan</td><td>Claire</td></tr>
+            <tr><td>11</td><td>Maria</td><td>Agathe</td><td>Margaux</td><td>Emma G</td></tr>
+            <tr><td>12</td><td>Chlo&eacute;</td><td>Axelle</td><td>Aude</td><td>Julien</td></tr>
+            <tr><td>13</td><td>Emma G</td><td>Claire</td><td>Philippine</td><td>Maria</td></tr>
+            <tr><td>14</td><td>Liam</td><td>Thibaut</td><td>Victoria</td><td>Manon</td></tr>
+            <tr><td>15</td><td>Romain</td><td>Emma M</td><td>Camille</td><td>Andrea</td></tr>
+            <tr><td>16</td><td>Margaux</td><td>Morgan</td><td>Julien</td><td>Chlo&eacute;</td></tr>
+            <tr><td>17</td><td>Aude</td><td>Lola</td><td>Myriam S</td><td>Victoria</td></tr>
+            <tr><td>18</td><td>Claire</td><td>Philippine</td><td>Emma G</td><td>Margaux</td></tr>
+            <tr><td>19</td><td>Marion</td><td>Axelle</td><td>Camille</td><td>Emma M</td></tr>
+            <tr><td>20</td><td>Agathe</td><td>Manon</td><td>Maria</td><td>Liam</td></tr>
+            <tr><td>21</td><td>Thibaut</td><td>Aude</td><td>Romain</td><td>Andrea</td></tr>
+            <tr><td>22</td><td>Lola</td><td>Julien</td><td>Axelle</td><td>Philippine</td></tr>
+            <tr><td>23</td><td>Myriam S</td><td>Chlo&eacute;</td><td>Morgan</td><td>Claire</td></tr>
+            <tr><td>24</td><td>Andrea</td><td>Victoria</td><td>Julien</td><td>Maria</td></tr>
+        </tbody>
+    </table>
+    <script>
+        document.getElementById("reveal-button").addEventListener("click", function() {
+            if (today >= 1 && today <= 24)
+            const rows = document.querySelectorAll("#calendar-table tbody tr");
+            rows.forEach(row => {
+                row.style.display = "none";
+            });
+            if (today >= 1 && today <= 24) {
+                const todayRow = document.querySelector(`#calendar-table tbody tr:nth-child(${today})`);
+                if (todayRow) {
+                    todayRow.style.display = "table-row";
+                    document.getElementById("calendar-table").style.display = "table";
+                    createConfetti();
+                } else {
+                    alert('The calendar starts from December 1st. Please check back then!');
+                }
